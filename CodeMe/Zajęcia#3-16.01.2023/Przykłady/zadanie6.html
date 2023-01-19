@@ -1,0 +1,39 @@
+<!-- Zadanie pokazuje jak użyć elementów liniowo blokowych żeby menu było poziome i jak użyć property list-style -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 6</title>
+    <style>
+      ul {
+        /* Tu można ustawić rodzaj znaczka przy elementach listy.
+          Można też zmienić tu <ul> na <ol>. Nie polecam tego robić. Powstaje nieczytelny kod.
+          W tym przypadku piszemy none, bo nie chcemy żadnych znaczków */
+        list-style-type: none;
+        /* Tu możemy zdecydować czy znaczki przy elementach listy mają być wewnątrz elementu <ul> (inside)
+          czy na zewnątrz (outside) */
+        list-style-position: inside;
+
+        /* Zapis skrócony: */
+        /* list-style: circle inside; */
+      }
+
+      /* Zagnieżdżanie. Najpierw piszemy rodzica: ul, potem spacja i dziecko: li */
+      ul li {
+        display: inline-block;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Strona Pierwsza</li>
+        <li>Strona Druga</li>
+        <li>Strona Trzecia</li>
+      </ul>
+    </nav>
+  </body>
+</html>

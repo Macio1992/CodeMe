@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 3</title>
+  </head>
+  <body>
+    <!-- W tym formularzu mamy różne atrybuty dla inputów -->
+    <h1>Wypełnij formularz kontaktowy:</h1>
+    <form method="get" novalidate>
+      <div class="input-field">
+        <label for="ticketNumber">Wygenerowany numer zgłoszenia</label>
+        <input type="text" value="DFT-4TU-A23-90-XVT" disabled>
+      </div>
+      <div class="input-field">
+        <label for="firstName">Imię:</label>
+        <!-- Atrybut required blokuje wysłanie formularza jeśli pole jest puste -->
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="Wpisz imię ..."
+          required
+        />
+      </div>
+      <div class="input-field">
+        <label for="lastName">Nazwisko:</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Wpisz nazwisko"
+          required
+        />
+      </div>
+      <div class="input-field">
+        <label for="pesel">Pesel:</label>
+        <!-- Atrybut pattern ustala jaki ma być format pola. W tym przypadku pesel musi składać się z 11 cyfr -->
+        <input
+          type="text"
+          id="pesel"
+          name="pesel"
+          pattern="[0-9]{11}"
+          title="Wpisz 11 cyfr"
+        />
+      </div>
+      <div class="input-field">
+        <label for="email">Email:</label>
+        <!-- Nawet bez żadnego dodatkowego atrybutu input typu email nie pozwoli nam wysłać formularz gdy
+          wpiszemy niepoprawny email
+      -->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Wpisz email:"
+        />
+      </div>
+      <div class="input-field">
+        <label for="message">Wiadomość: (Max 20 znaków)</label>
+        <!-- Atrybut maxlength zabrania wpisać do pola tesktowego więcej niż 20 znaków -->
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="20"
+        ></textarea>
+      </div>
+      <div class="input-field">
+        <!-- Atrybut checked na start ustawia checkbox na zaznaczony -->
+        <input type="checkbox" name="agreement" id="agreement" checked />
+        <label for="agreement">Czy zgadzasz się na RODO?</label>
+      </div>
+      <div class="input-field">
+        <label for="isPolish">Czy jesteś narodowości Polskiej?</label>
+        <!-- Atrybut checked na start ustawia radio na ten w którym umieszczamy ten atrybut -->
+        <input
+          type="radio"
+          id="isPolish"
+          name="isPolish"
+          value="polish"
+          checked
+        />
+        <input type="radio" id="notPolish" name="isPolish" value="notPolish" />
+      </div>
+      <div>
+        <label for="age">Wiek: (wymagana pełnoletność)</label>
+        <input type="number" name="age" id="age" min="18" />
+      </div>
+      <div class="input-field">
+        <fieldset>
+          <legend>Zaznacz powód wysyłania tego formularza:</legend>
+          <input type="radio" id="boredom" name="reason" value="R" />
+          <label for="boredom">Nudzę się</label><br />
+          <input type="radio" id="help" name="reason" value="H" />
+          <label for="help">Potrzebuję pomocy</label><br />
+          <input type="radio" id="differentReason" name="reason" value="D" />
+          <label for="differentReason">Inny powód</label>
+        </fieldset>
+      </div>
+      <div class="input-field">
+        <input type="submit" value="Wyślij" />
+      </div>
+    </form>
+  </body>
+</html>

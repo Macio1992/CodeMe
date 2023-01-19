@@ -1,0 +1,34 @@
+body {
+  background-image: url("https://freefrontend.com/assets/img/css-background-patterns/css3-gradient-pattern.png");
+}
+
+header {
+  background-color: white;
+  font-size: 24px;
+  padding: 10px;
+  font-weight: 900;
+}
+
+span {
+  padding: 0px 10px 0px 0px;
+}
+
+div {
+  padding: 20px;
+  border: 1px solid black;
+  width: 45%;
+  background-color: white;
+}
+
+img {
+  width: 50%;
+}
+
+#box1,
+#box2 {
+  float: left;
+}
+
+#box3 {
+  clear: both;
+}

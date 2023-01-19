@@ -1,0 +1,17 @@
+body {
+  background-color: bisque;
+}
+nav ul li{
+  display: inline-block;
+  background-color: red;
+  color: white;
+}
+
+main section{
+  background-color: lightgrey;
+}
+
+.footer-base{
+  color: white;
+  background-color: grey;
+}

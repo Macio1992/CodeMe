@@ -1,0 +1,60 @@
+<!-- To zadanie pokazuje warsxtwy box model. margin, padding, border -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 11</title>
+  <style>
+    /* Każdy element div ma mieć 200x200 wymiary. Dlatego używam selektora taga */
+    div {
+      width: 200px;
+      height: 200px;
+    }
+
+    .box1 {
+      /* Border ustawiamy na 1px solid (ciągła linia) koloru szarego */
+      border: 1px solid gray;
+      /* Box1 ma margin z góry i z dołu ustawiany oddzielnie. Lewy i prawy są zerowe. */
+      margin-top: 20px;
+      margin-bottom: 40px;
+      /* Tak samo jest z paddingiem */
+      /* padding-top: 20px;
+      padding-bottom: 40px; */
+    }
+
+    .box2 {
+      /* Border ustawiamy na 5px dotted (kropkowany) koloru pomarańczowego */
+      border: 5px dotted orange;
+      /* Box2 ma margin z lewej i z prawej ustawiany oddzielnie. Góra i dół są zerowe. */
+      margin-left: 40px;
+      margin-right: 60px;
+      /* padding-left: 40px;
+      padding-right: 60px; */
+    }
+
+    .box3 {
+      /* Border ustawiamy na 10px dashed(kwadraciki) koloru niebieskiego */
+      border: 10px dashed blue;
+      /* Box3 ma zapis skrócony podwójny. Pierwsza liczba symbolizuje margin-top i margin-bottom (0), druga lewo, prawo (20px) */
+      margin: 0 20px;
+      /* padding: 0 20px; */
+    }
+
+    .box4 {
+      /* Skrócony zapis: 1px ciągłej linii, kolor taki jak kolor elementu, domyślnie: czarny */
+      border: 1px solid;
+      /* Box4 ma zapis skrócony poczwórny. Pierwsza liczba to margin-top, druga margin-right, trzecia margin-bottom, czwarta margin-right */
+      margin: 20px 0 40px 30px;
+      /* padding: 20px 0 40px 30px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">Box 1</div>
+  <div class="box2">Box 2</div>
+  <div class="box3">Box 3</div>
+  <div class="box4">Box 4</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- W tym zadaniu zastępujemy domyślny display elementów na odwrotny
+  Paragrafy są domyślnie blokowe, my nadajemy im display liniowy.
+  Spany są domyślnie liniowe, my nadajemy im display blokowy.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 7</title>
+  <style>
+    .block-paragraph {
+      width: 200px;
+      background-color: aqua;
+    }
+
+    .inline-span {
+      background-color: chocolate;
+      /* Nie ma sensu nadawać szerokości, bo elementy liniowe i tak tego nie przyjmą. Można dodać lewe/prawe marginy/paddingi */
+      padding-left: 10px;
+    }
+
+    .inline-paragraph {
+      background-color: yellow;
+      display: block;
+      width: 200px;
+    }
+
+    .block-span {
+      background-color: red;
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <p class="block-paragraph">First block paragraph</p>
+    <p class="block-paragraph">Second block paragraph</p>
+    <p class="block-paragraph">Third block paragraph</p>
+
+    <span class="inline-span">First inline span</span>
+    <span class="inline-span">Second inline span</span>
+    <span class="inline-span">Third inline span</span>
+  </div>
+  <div class="two">
+    <p class="inline-paragraph">First inline paragraph</p>
+    <p class="inline-paragraph">Second inline paragraph</p>
+    <p class="inline-paragraph">Third inline paragraph</p>
+
+    <span class="block-span">First block span</span>
+    <span class="block-span">Second block span</span>
+    <span class="block-span">Third block span</span>
+  </div>
+</body>
+</html>

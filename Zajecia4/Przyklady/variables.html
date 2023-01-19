@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* To zmienna globalna. Zadeklarowana w taki sposób (w :root), jest
+    widoczna dla całego dokumentu */
+    :root {
+      --primary-color: #ff6678;
+      --position-rel: relative;
+      --position-abs: absolute;
+      --box-size: 200px;
+    }
+
+    .box {
+      /* To zmienna lokalna, dostępna tylko w obrębie selektora .box */
+      --local-var: yellow;
+      width: var(--box-size);
+      height: var(--box-size);
+      /* Tu wykorzystujemy zmienną globalną, zadeklarowaną w :root */
+      background-color: var(--primary-color);
+      /* Tu nie zadziała, bo zmienna nie jest globalna, tylko lokalna dla .box */
+      border: 1px solid var(--local-var);
+    }
+
+    .box2 {
+      width: var(--box-size);
+      height: var(--box-size);
+      border: 1px solid var(--local-var);
+    }
+
+    .relative {
+      position: var(--position-rel);
+      width: var(--box-size);
+      height: var(--box-size);
+      border: 1px solid;
+    }
+
+    .absolute {
+      position: var(--position-abs);
+      width: calc(var(--box-size)/4);
+      height: calc(var(--box-size)/4);
+      background-color: var(--primary-color);
+      top: calc(var(--box-size)/10);
+      left: calc(var(--box-size)/10);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+
+  <div class="relative">
+    <div class="absolute"></div>
+  </div>
+</body>
+</html>

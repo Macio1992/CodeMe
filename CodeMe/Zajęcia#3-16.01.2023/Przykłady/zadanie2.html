@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 2</title>
+  <!-- W tym przykładzie na początku stworzyliśmy klasę .red po to żeby nadać elementowi czerwony kolor
+    Oba elementy: h1 i p potrzbeują tego koloru. Potem zostaliśmy poproszeni o to że paragraf oprócz tego
+    że ma być czerwony potrzebuje jeszcze czarnej ramki. Możemy okreslić, że p.red selektor ma obejmować
+    tylko paragrafy z klasą .red.
+    Innym sposobem byłoby stworzyć nową klasę np. o nazwie .border-black i dodać drugą klasę do elementu p
+  -->
+  <style>
+    .red {
+      color: red;
+    }
+
+    p.red {
+      border: 1px solid black;
+    }
+
+    /* .border-black {
+      border: 1px solid black;
+    } */
+  </style>
+</head>
+<body>
+  <h1 class="red">Czerwony h1</h1>
+  <p class="red">Czerwony p</p>
+  <!-- <p class="red border-black">Czerwony p z dwoma klasami</p> -->
+</body>
+</html>

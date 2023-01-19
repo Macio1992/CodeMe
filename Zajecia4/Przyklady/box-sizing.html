@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing</title>
+  <style>
+    /* W tym zadaniu, czerwony i zielony div nie mieszczą się w rodzicu.
+      Dlatego że domyślnie ustawiony jest box-sizing: content-box, czyli
+      oprócz tego że divy mają po 50% szerokości to do tego musimy doliczyć
+      border, który z lewej i prawej strony ma po 3px.
+    */
+    .parent {
+      border: 1px solid;
+      overflow: hidden;
+    }
+
+    .child {
+      width: 50%;
+      height: 200px;
+      float: left;
+      border: 3px solid yellow;
+      /* Odkomentuj to żeby ustawić border-box. Dzięki temu border wliczy się
+      do rozmiaru diva zielonego i czerwonego  */
+      /* box-sizing: border-box; */
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child red"></div>
+    <div class="child green"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 1</title>
+  <style>
+    .purple {
+      color: purple;
+    }
+
+    .big.red {
+      font-size: 40px;
+      color: red;
+    }
+
+    #importantHeader {
+      color: yellow;
+    }
+
+    /* Pomimo tego, że poniższy selektor jest na końcu styli i tak zostanie zaaplikowany
+    tylko do h1 bez żadnego atrybutu. Elementy h1 mające atrybuty zostaną wzięte pod uwagę w
+    pierwszej kolejności */
+    h1 {
+      color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="purple">Some purple header</h1>
+  <h1 class="big red">Some big red header</h1>
+  <h1>Just header</h1>
+  <h1 id="importantHeader">Important header</h1>
+</body>
+</html>

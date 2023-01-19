@@ -1,0 +1,62 @@
+<!-- Zadanie pokazujące jak użyć pseudoelementów: ::before i ::after -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: inline-block;
+      }
+
+      label {
+        font-size: 24px;
+      }
+
+      .input-field {
+        margin-top: 20px;
+      }
+
+      input[type=submit] {
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      label::after {
+        content: '*';
+        color: red;
+      }
+
+      .input-age {
+        position: relative;
+      }
+
+      .input-age:hover::before {
+        position: absolute;
+        content: attr(input-tooltip);
+        background-color: white;
+        font-size: 30px;
+        padding: 10px;
+        bottom: -54px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="input-field">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+      <div class="input-field input-age" input-tooltip="You must be an adult">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required />
+      </div>
+      <div class="input-field">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </body>
+</html>

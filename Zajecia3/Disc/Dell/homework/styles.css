@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&family=Oswald:wght@200;300&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap");
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 150px;
+}
+
+nav {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+header img {
+  width: 100px;
+  float: left;
+}
+
+main {
+  clear: both;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+.image {
+  width: 800px;
+  margin: auto;
+}
+
+.image img {
+  width: 100%;
+}
+
+.diet-type {
+  width: 25%;
+  border-radius: 10px;
+  float: left;
+  margin: 20px;
+}
+
+.diet-type img {
+  width: 100%;
+}
+
+.diet-type button {
+  border: 1px solid blueviolet;
+  background: none;
+  padding: 10px 20px;
+  color: blueviolet;
+  font-weight: bold;
+  margin: auto;
+  display: block;
+}
+
+.diet-type a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  clear: both;
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.opinions {
+  position: fixed;
+  bottom: 100px;
+  background-color: #FFFD00;
+  padding: 30px;
+  border-radius: 10px;
+  right: 50px;
+}

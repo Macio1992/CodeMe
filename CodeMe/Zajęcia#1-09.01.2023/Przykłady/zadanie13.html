@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 2</title>
+  </head>
+  <body>
+    <!--
+      Ten przykład różni się od zadanie2.html tym, że umieściłem każdy <label> + <input>
+      w <div>. Każdy z tych <div> ma klasę "input-field"
+     -->
+    <form method="get">
+      <div class="input-field">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name ..." />
+      </div>
+      <div class="input-field">
+        <label for="name">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name ..." />
+      </div>
+      <div class="input-field">
+        <label for="description">Wiadomość:</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </div>
+      <div class="input-field">
+        <input type="submit" value="Wyślij" />
+      </div>
+    </form>
+  </body>
+</html>

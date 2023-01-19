@@ -1,0 +1,29 @@
+body{
+    background-image: url(https://freefrontend.com/assets/img/css-background-patterns/css3-gradient-pattern.png);
+}
+li{
+    padding: 2%;
+    /* lepiej inline-block. Można wtedy dać padding na wszystkie strony. Teraz tylko na prawo i lewo.
+    Chyba że taki był zamiar */
+    display: inline;
+    font-weight: bold;
+}
+menu{
+    background-color: white;
+}
+.kafelki{
+    padding: 1%;
+    background-color: white;
+    /* tu można by krócej: border: 1px solid, ale tak też jest ok */
+    border: 1px;
+    border-style: solid;
+    width: 45%;
+    float: left;
+    height: 200px;
+}
+/* Nieużywany selektor */
+#kafelek3{
+}
+#zdj3{
+    text-align: center;
+}

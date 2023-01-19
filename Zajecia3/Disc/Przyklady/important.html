@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      font-size: 3em;
+    }
+
+    #paragraph1 {
+      color: blue;
+    }
+
+    .paragraph2 {
+      color: greenyellow !important;
+    }
+
+    .inline-paragraph {
+      color: yellow !important;
+    }
+
+    .parent {
+      /* width: 800px;
+      height: 800px; */
+      background-color: yellow;
+    }
+
+    .child {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <p id="paragraph1" class="paragraph2">Paragraph id</p>
+  <p class="inline-paragraph" style="color: red;">Inline paragraph</p>
+
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="clear"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input phone</title>
+    <link rel="stylesheet" href="zadanie2.css">
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <div class="input-field">
+          <label for="phoneNumber">Phone Number</label>
+          <div class="input-phone">
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              required
+              maxlength="9"
+              pattern="[0-9]{9}"
+              placeholder="Enter your phone number ..."
+            />
+          </div>
+        </div>
+        <div class="input-field submit">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

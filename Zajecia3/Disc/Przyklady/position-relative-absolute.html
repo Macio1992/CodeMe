@@ -1,0 +1,57 @@
+<!-- Zadanie pokazujące position: relative, absolute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      width: 800px;
+      height: 800px;
+      border: 1px solid;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      font-size: 30px;
+      color: white;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .box1 {
+      background-color: yellow;
+      top: 30px;
+      left: 30px;
+    }
+
+    .box2 {
+      background-color: red;
+      top: -10px;
+      left: 20px;
+    }
+
+    .absolute {
+      /* Div .absolute szuka najbliższego rodzica który ma position: relative, najbliższym
+      rodzicem jest section, ale section nie ma position:relative, więc szuka dalej. Jeśli nie
+      znajdzie, to odnosi się do root elementu <html>. Tak jest w tym przypadku. */
+      position: absolute;
+      background-color: green;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="relative box1">RELATIVE</div>
+    <div class="relative box2">RELATIVE</div>
+    <div class="absolute">ABSOLUTE</div>
+  </section>
+</body>
+</html>

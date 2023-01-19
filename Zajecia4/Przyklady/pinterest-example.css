@@ -1,0 +1,108 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.posts {
+  display: flex;
+}
+
+.post {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.post .image {
+  display: flex;
+}
+
+.post .content {
+  padding: 0 20px;
+  min-width: 300px;
+}
+
+.post .content .actions img {
+  width: 25px;
+  padding: 0 5px;
+}
+
+.post .content .type {
+  background-color: lightskyblue;
+  color: #fff;
+  padding: 10px;
+}
+
+.post .content .top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.post .content .top button {
+  background-color: indianred;
+  color: white;
+}
+
+.post .content .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .content .user .avatar {
+  display: flex;
+  align-items: center;
+}
+
+.post .content .user .avatar .user-info {
+  padding-left: 10px;
+}
+
+.post .content .bottom {
+  margin-top: 30px;
+}
+
+.post .content .bottom .comment-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.post .content .bottom .comment-area input {
+  width: 100%;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.post .content .bottom .comment-area::after {
+  content: '';
+  background-image: url('emoji.png');
+  background-size: 35px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 18px;
+}
+
+.circle-image {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+    }
+
+    header nav {
+      padding: 0 20px;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    header nav ul li {
+      padding: 0 10px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    header .icons {
+      flex-grow: 2;
+      margin-left: 20px;
+    }
+
+    header .icons img {
+      width: 25px;
+      padding: 0 2px;
+    }
+
+    header nav {
+      flex-grow: 0;
+    }
+
+    header button {
+      flex-grow: 0;
+      border: 1px solid gray;
+      padding: 15px 30px;
+      background: none;
+      border-radius: 5px;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    header button:hover {
+      background-color: gray;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="icons">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png"
+        alt=""
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/5948/5948565.png"
+        alt=""
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2099/2099085.png"
+        alt=""
+      />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#1">One</a></li>
+        <li><a href="#2">Two</a></li>
+        <li><a href="#3">Three</a></li>
+      </ul>
+    </nav>
+    <button>Click</button>
+  </header>
+</body>
+</html>

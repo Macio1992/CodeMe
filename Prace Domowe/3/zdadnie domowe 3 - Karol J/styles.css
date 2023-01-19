@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+/* --------------------- Google --------------------- */
+
+.google {
+  position: fixed;
+  background-color: rgb(229, 255, 0);
+  /* lepiej right :) */
+  left: 80%;
+  bottom: 10%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* --------------------- Menu --------------------- */
+
+.menu {
+  position: fixed;
+  width: 100%;
+  /* nie wiem czy overflow: hidden potrzebny? */
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu-photo {
+  width: 80px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.menu-lst {
+  display: inline-block;
+  list-style: none;
+  text-indent: 20px;
+}
+
+.menu-lst li {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* --------------------- Offer --------------------- */
+
+.offer {
+  /* Górny padding dałbym całemu main */
+  padding: 100px 10px 10px 10px;
+}
+
+.offer-photo {
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------- Diets --------------------- */
+
+.diets {
+  padding: 10px;
+}
+
+.diet {
+  width: 20%;
+  float: left;
+  padding: 15px;
+}
+
+.diet-photo {
+  width: 100%;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.diet-button {
+  display: inline-block;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  margin: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diet-link {
+  margin: 10px;
+  text-decoration: underline;
+  display: block;
+  color: blueviolet;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------- Footer --------------------- */
+
+footer {
+  clear: both;
+  background-color: blueviolet;
+  color: white;
+  padding: 15px;
+}
+
+.info {
+  list-style: none;
+}

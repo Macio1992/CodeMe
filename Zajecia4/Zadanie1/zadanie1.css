@@ -1,0 +1,75 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.advert {
+  background-image: url('https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/babe8e5b-e64b-4cb3-804f-f04d03322eb0/coke-2.jpg');
+  background-size: 50%;
+  height: 400px;
+}
+
+header {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  z-index: 10;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 20px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: brown;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.offers {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.offers .offer {
+  width: 300px;
+  display: inline-block;
+  padding: 20px;
+  background-color: cadetblue;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+  border-radius: 5px;
+}
+
+.offers .offer1 {
+  left: 40px;
+  z-index: 7;
+}
+
+.offers .offer2 {
+  top: -20px;
+  background-color: brown;
+  z-index: 8;
+}
+
+.offers .offer3 {
+  left: -40px;
+  z-index: 7;
+}
+
+.offers .offer ol {
+  text-align: left;
+}
+
+.offers .offer ol li {
+  margin-bottom: 10px;
+}

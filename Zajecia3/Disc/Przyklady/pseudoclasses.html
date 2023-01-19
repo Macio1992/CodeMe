@@ -1,0 +1,90 @@
+<!-- Zadanie pokazujące jak używać pseudoklas do selektorów
+first-child, last-child, nth-child - parzyste, nieparzyste
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section div {
+      font-size: 40px;
+      border: 1px solid;
+    }
+
+    section div:first-child {
+      background-color: red;
+    }
+
+    section div:last-child {
+      background-color: yellow;
+    }
+
+    section div:nth-child(2) {
+      background-color: green;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    table td, table th {
+      border: 1px solid;
+    }
+
+    table td {
+      padding: 10px;
+    }
+
+    table tbody tr:nth-child(odd) {
+      background-color: gray;
+    }
+    table tbody tr:nth-child(even) {
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Cena</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Margaret</td>
+        <td>Atwood</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Mark</td>
+        <td>Zuckerberg</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>Sylvie</td>
+        <td>France</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
