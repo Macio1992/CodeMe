@@ -1,0 +1,59 @@
+/* W całym pliku nie dawłabym nazwy elementu w selektorze
+czyli, .nav, .link itd :) */
+
+body {
+  background-color: bisque;
+}
+p.nav {
+  font-size: 150%;
+  text-indent: 10%;
+}
+
+/* Tu bym dał tak:
+
+.link {
+  background-color: red;
+  color: blue;
+  text-decoration: none;
+}
+
+.white-link {
+  color: aliceblue;
+}
+
+*/
+
+a.link {
+  background-color: red;
+  color: blue;
+  text-decoration: none;
+}
+a.link2 {
+  background-color: red;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+div {
+  background-color: aquamarine;
+  font-size: 20px;
+}
+
+div.third {
+  background-color: gray;
+  color: white;
+}
+
+p.p1 {
+  background-color: yellow;
+}
+
+p.p2 {
+  font-size: 200%;
+  font-family: fantasy;
+  font-style: italic;
+}
+
+p.p3 {
+  text-align: center;
+}

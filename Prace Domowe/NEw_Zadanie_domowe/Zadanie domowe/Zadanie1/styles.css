@@ -1,0 +1,47 @@
+body {
+  background-color: bisque;
+}
+/* Tu bym dał tylko .nav */
+p.nav {
+  font-size: 150%;
+  text-indent: 10%;
+}
+
+a.link {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Ja bym tu trochę inaczej zrobił:
+  Teraz jest tak:
+  w 23 linijce przypisany jest background wszystkim divom
+  w 29 nadpisywany jest background konkretnie dla diva .third
+
+  Ja bym to widział tak:
+  - nadał bym każdemu divovi background, ale nie robiłbym wszystkim divom,
+  font size może zostac bo on się tyczy wszystkich divów
+
+  div {
+    font-size: 20px;
+  }
+
+  .first, .second {
+    background-color: aquamarine;
+  }
+
+  .third {
+    background-color: gray;
+  }
+*/
+
+div {
+  background-color: aquamarine;
+  font-size: 20px;
+}
+
+div.third {
+  background-color: gray;
+  color: white;
+}

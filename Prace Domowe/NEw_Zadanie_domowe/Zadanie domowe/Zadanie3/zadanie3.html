@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ul zamiast div.nav -->
+    <div class="nav">
+      <a href="index.html">Strona Główna</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="Sklep.html">Sklep</a>
+    </div>
+    <!-- Kilka rzeczy tu nie gra:
+      1) id możemy użyć tylko do jednego elementu, tu używasz id=float do dwóch
+      2) z floatami tak jest, że robimy jeden div parent np. boxes, do niego
+      wrzucamy divy które mają być obok siebie i każdemu z nich dajemy float.
+      Potem albo dorzucamy z tymi divami kolejny div który ma clear:both, albo
+      rodzicowi .boxes dajemy overflow: hidden.
+    -->
+    <!-- To bym opatulił w diva .boxes, z id bym zrezygnował całkiem -->
+    <div class="box" id="float">
+      <img
+        src="https://www.raftfurniture.co.uk/media/wysiwyg/Homepage_Sofas.jpg"
+        alt="Nie udało się załadować obrazu"
+        height="80"
+        width="100"
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      exercitationem pariatur labore autem quae obcaecati quisquam voluptatem.
+      Nisi, non, iste tempora dolorum saepe rem, ratione et pariatur cumque
+      veritatis debitis.
+    </div>
+    <div class="box" id="float">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      exercitationem pariatur labore autem quae obcaecati quisquam voluptatem.
+      Nisi, non, iste tempora dolorum saepe rem, ratione et pariatur cumque
+      veritatis debitis.<br />
+      <img
+        src="https://www.raftfurniture.co.uk/media/wysiwyg/Homepage_Sofas.jpg"
+        alt="Nie udało się załadować obrazu"
+        height="80"
+        width="100"
+      />
+    </div>
+    <div class="box" id="nonFloat">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      exercitationem pariatur labore autem quae obcaecati quisquam voluptatem.
+      Nisi, non, iste tempora<img
+        src="https://www.raftfurniture.co.uk/media/wysiwyg/Homepage_Sofas.jpg"
+        alt="Nie udało się załadować obrazu"
+        height="80"
+        width="100"
+      />
+      dolorum saepe rem, ratione et pariatur cumque veritatis debitis.<br />
+    </div>
+  </body>
+</html>
