@@ -1,0 +1,44 @@
+main {
+  width: var(--page-size);
+  margin: auto;
+}
+
+main .articles {
+  display: flex;
+  margin-top: var(--size-40);
+}
+
+main .articles .article {
+  flex-grow: 1;
+  padding: 0 var(--size-20);
+  margin-bottom: var(--size-40);
+}
+
+main .articles h1 {
+  font-size: var(--size-20);
+  margin: var(--size-20) 0;
+}
+
+main .articles p {
+  line-height: var(--text-line-height);
+}
+
+@media all and (max-width: 75em) {
+  main {
+    width: 100%;
+  }
+
+  main .articles {
+    flex-wrap: wrap;
+  }
+
+  main .articles .article {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (max-width: 48em) {
+  main .articles .article {
+    flex-basis: 100%;
+  }
+}

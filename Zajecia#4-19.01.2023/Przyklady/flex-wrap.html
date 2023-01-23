@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      background: grey;
+      display: flex;
+      /* Jeśli zakomentujemy linijkę 12, to elementy będą się wciskać w jedną linię, dlatego
+      że domyślnie flex-wrap: nowrap; */
+      flex-wrap: wrap;
+    }
+
+    .child {
+      width: 25%;
+      height: 100px;
+      background-color: orange;
+      border: 1px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+:root {
+  --size-10: 10px;
+  --size-20: calc(var(--size-10) * 2);
+  --size-40: calc(var(--size-10) * 4);
+
+  --image-width: 300px;
+
+  --page-size: 80%;
+  --section-size: 50%;
+
+  --green-color: yellowgreen;
+  --brown-color: brown;
+  --gray-color: gray;
+
+  --description-line-height: 25px;
+  --button-border-radius: 5px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: var(--image-width);
+}
+
+p,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}

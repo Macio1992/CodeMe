@@ -1,0 +1,24 @@
+:root {
+  --space-10: 10px;
+  --space-20: calc(var(--space-10) * 2);
+  --space-40: calc(var(--space-10) * 4);
+  --space-60: calc(var(--space-10) * 6);
+
+  --gray-color: gray;
+  --button-color: crimson;
+  --white-color: #fff;
+
+  --animal-section-width: calc(100%/3);
+
+  --button-border-radius: 5px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+}

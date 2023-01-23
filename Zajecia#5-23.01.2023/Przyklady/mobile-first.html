@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile First</title>
+  <style>
+    /* Dla większych rozdzielczości niż 30rem, ustawiamy takie style */
+    p {
+      font-size: 3em;
+      color: blue;
+    }
+
+    /* Dla rozdzielczości mniejszej, równej niż 30rem, ustalamy takie style:
+    Mobile first sugeruje nam żeby najpierw skupić się na stylach dla mobile.
+    */
+    @media (max-width: 30rem) {
+      p {
+        font-size: 2em;
+        color: green;
+        text-decoration: underline;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>This paragrahp should be first styled for mobile</p>
+</body>
+</html>

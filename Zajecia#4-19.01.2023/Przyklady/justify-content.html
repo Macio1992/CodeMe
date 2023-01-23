@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justify Content</title>
+  <style>
+    .parent-row {
+      background: grey;
+      display: flex;
+      /* Tego nie trzeba ustawiać, to jest domyślnie ustawione */
+      flex-direction: row;
+      /* W tym przypadku centrujemy od lewa do prawa (bo mamy row) */
+      justify-content:center;
+      margin-bottom: 40px;
+    }
+
+    .parent-column {
+      height: 700px;
+      background: grey;
+      display: flex;
+      /* W tym przypadku centrujemy od góry do dołu (bo mamy column) */
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      border: 1px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent-row">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+  <div class="parent-column">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>

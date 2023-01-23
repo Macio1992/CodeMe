@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align items</title>
+  <style>
+    .parent {
+      width: 800px;
+      border: 1px solid gray;
+      display: flex;
+      /* flex-direction: row nie musimy pisać, to jest ustawione
+        domyślnie przez przeglądarkę. Wpisałem to żeby podkreślić
+        że w tym przykładzie main axis jest od lewej do prawej,
+        cross axis z góry w dół. align items będzie centrować
+        pionowo.
+      */
+      flex-direction: row;
+      /* tu można zmieniać na np. flex-end, center i popróbować */
+      align-items: flex-start;
+    }
+
+    .child {
+      width: 200px;
+      height: 100px;
+      background-color: orange;
+      border: 1px solid gray;
+    }
+
+    /* Flex patrzy na najwyższy element i względem niego potem centruje */
+    .child-big {
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child child-big"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>

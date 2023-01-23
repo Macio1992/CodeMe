@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex shrink</title>
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    ul li {
+      background-color: orange;
+      border: 1px solid;
+      color: white;
+      padding: 20px;
+      width: 500px;
+    }
+
+    /* item z najmniejszą wartością będzie się zmniejszał wraz z rozdzielczością
+      w najmniejszym stopniu, ten z największą liczbą, najbardziej będzie się zmniejszał
+    */
+    .item1 {
+      flex-shrink: 1;
+    }
+
+    .item2 {
+      flex-shrink: 2;
+    }
+
+    .item3 {
+      flex-shrink: 3;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+  </ul>
+</body>
+</html>

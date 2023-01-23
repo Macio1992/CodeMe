@@ -1,0 +1,106 @@
+:root {
+  --space-10: 10px;
+  --space-20: calc(var(--space-10)*2);
+  --space-30: calc(var(--space-10)*3);
+  --small-image-size: 25px;
+  --content-min-width: 350px;
+  --image-max-width: 600px;
+  --white-color: #fff;
+  --gray-color: gray;
+  --brown-color: brown;
+}
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.f-g-1 {
+  flex-grow: 1;
+}
+
+.a-i-center {
+  align-items: center;
+}
+
+.j-c-space-between {
+  justify-content: space-between;
+}
+
+.j-c-flex-end {
+  justify-content: flex-end;
+}
+
+.small-image {
+  width: var(--small-image-size);
+}
+
+.image-circle {
+  border-radius: 50%;
+}
+
+.button {
+  background: none;
+  border: 0;
+  padding: var(--space-10);
+  border-radius: 5px;
+}
+
+.button-save {
+  background-color: var(--brown-color);
+  color: var(--white-color);
+}
+
+.button-follow {
+  background-color: blueviolet;
+  color: var(--white-color);
+}
+
+.header {
+  margin-bottom: var(--space-10);
+}
+
+.post {
+  border: 1px solid var(--gray-color);
+}
+
+.post .post-image img {
+  max-width: var(--image-max-width);
+  display: block;
+}
+
+.post .post-content {
+  min-width: var(--content-min-width);
+  padding: var(--space-20);
+}
+
+.post .post-content > * {
+  margin-bottom: var(--space-30);
+}
+
+.post .post-content .post-owner .post-owner-follow-count {
+  margin-left: var(--space-10);
+}
+
+.post .post-content .post-owner .post-owner-follow-count > * {
+  margin-bottom: 5px;
+}
+
+.post .post-content .post-comments input {
+  padding: var(--space-10) var(--space-20);
+  border-radius: 5px;
+  border: 1px solid var(--gray-color);
+  margin-left: var(--space-20);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <style>
+    .parent {
+      background: grey;
+      display: flex;
+      justify-content: center;
+      /* Fajny sposób na przestrzenie między flex-items */
+      gap: 1rem;
+    }
+
+    .child {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      border: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    /* Domyślnie każdy flex item ma order: 0, gdy ustawiamy poszczególnym
+    flex item jakiś order, to liczby układają się od najmniejszej do największej
+    w tym przypadku będziemy mieli -1,0,0,0,0,1 */
+    .child4 {
+      order: -1;
+    }
+    .child6 {
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">1 <br> order: 0</div>
+    <div class="child">2 <br> order: 0</div>
+    <div class="child">3 <br> order: 0</div>
+    <div class="child child4">4 <br> order: -1</div>
+    <div class="child">5 <br> order: 0</div>
+    <div class="child child6">6 <br> order: 1</div>
+  </div>
+</body>
+</html>

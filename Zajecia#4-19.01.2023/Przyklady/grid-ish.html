@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid ish</title>
+  <style>
+    .parent {
+      display: flex;
+      width: 800px;
+      flex-wrap: wrap;
+      background-color: grey;
+    }
+
+    .child {
+      border: 1px solid #fff;
+      background-color: orange;
+      height: 100px;
+      flex: 1 1 33%;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>

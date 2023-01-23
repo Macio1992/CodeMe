@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD Menu</title>
+  <style>
+    * {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    header .input input {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid grey;
+      padding: 15px 20px 15px 40px;
+      position: relative;
+    }
+
+    header .actions {
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-around;
+    }
+
+    header .actions .action {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    header .actions .action img {
+      margin: 0 8px;
+    }
+
+    @media (min-width: 48em) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header .actions {
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="input">
+      <input type="text" placeholder="Search term ...">
+    </div>
+    <div class="actions">
+      <div class="action">
+        <img src="https://img.icons8.com/laces/512/user.png" alt="User Profile">
+        <p>My Profile</p>
+      </div>
+      <div class="action">
+        <img src="https://img.icons8.com/ios/512/loading-heart.png" alt="Like icon">
+        <p>Favorites</p>
+      </div>
+      <div class="action">
+        <img src="https://img.icons8.com/ios/512/shopping-cart-loaded.png" alt="Shopping bag">
+        <p>$ 0.00</p>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

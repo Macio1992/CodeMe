@@ -1,0 +1,42 @@
+.heading {
+  text-align: center;
+  margin-top: var(--space-20);
+}
+
+header nav .menu {
+  list-style: none;
+  margin: var(--space-40) 0 var(--space-60) 0;
+  padding: 0;
+  text-align: center;
+}
+
+header nav .menu li {
+  border: 1px solid var(--gray-color);
+  padding: var(--space-10) 0;
+  text-transform: uppercase;
+}
+
+main .animals .animal {
+  width: var(--animal-section-width);
+  padding: 0 var(--space-20);
+  margin-bottom: var(--space-20);
+}
+
+main .animals .animal button {
+  margin-top: var(--space-20);
+}
+
+main .animals .animal img {
+  width: 100%;
+  margin-bottom: var(--space-10);
+}
+
+main .animals .animal button {
+  background: none;
+  border: 0;
+  background-color: var(--button-color);
+  color: var(--white-color);
+  padding: var(--space-10);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+}

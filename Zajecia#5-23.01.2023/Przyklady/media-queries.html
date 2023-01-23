@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    p {
+      font-size: 3em;
+    }
+
+    /* Dla rozdzielczości mniejszej lub równej 1200px, paragraf będzie czerwony */
+    @media (max-width: 1200px) {
+      p {
+        color: red;
+      }
+    }
+
+    /* Dla rozdzielczości mniejszej lub równej 600px, paragraf będzie żołto zielony */
+    @media (max-width: 600px) {
+      p {
+        color: greenyellow;
+      }
+    }
+    /* Ważna jest tutaj kolejność. Jeśli dalibyśmy media z linijki 21 ponad media z linijki
+    14, to kolor zawsze byłby czerwony, bo media 1200px nadpisałyby media 600px */
+
+    /* Dla rozdzielczości powyżej 1200px kolor paragrafu będzie czarny, bo nie zmieniliśmy go na
+    żaden inny. A domyślnym kolorem dla <p> jest czarny. */
+  </style>
+</head>
+<body>
+  <p>This paragraph should change its styles with screen size changes</p>
+</body>
+</html>

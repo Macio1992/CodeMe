@@ -1,0 +1,80 @@
+main {
+  display: flex;
+  width: var(--page-size);
+  margin: auto;
+}
+
+.posts,
+.about-me {
+  width: var(--section-size);
+}
+
+.posts .post {
+  display: flex;
+  margin-bottom: var(--size-40);
+}
+
+.posts .post .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--size-10) var(--size-20);
+}
+
+.posts .post .content p::first-letter {
+  font-size: var(--size-40);
+  color: var(--brown-color);
+  font-style: italic;
+}
+
+.posts .post a {
+  align-self: center;
+}
+
+.posts .post a:visited {
+  color: var(--green-color);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid var(--gray-color);
+}
+
+.about-me .description {
+  padding: var(--size-20) var(--size-40);
+  line-height: var(--description-line-height);
+}
+
+.about-me form {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me form > * {
+  margin-bottom: var(--size-20);
+}
+
+.about-me form input[type="text"],
+input[type="email"] {
+  padding: var(--size-10) var(--size-40);
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--gray-color);
+  font-size: var(--size-20);
+}
+
+.about-me form input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: var(--brown-color);
+  font-style: italic;
+}
+
+.about-me form input[type="submit"] {
+  align-self: center;
+  background: var(--brown-color);
+  color: #fff;
+  border: 0;
+  padding: var(--size-10) var(--size-20);
+  cursor: pointer;
+}
