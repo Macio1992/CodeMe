@@ -1,0 +1,41 @@
+body{
+    margin: 1%;
+}
+li{
+    list-style: none;
+    /* Lepiej inline-block i dać padding z każdej strony. Byłoby czytelniej :) */
+    display: inline;
+}
+nav.top{
+    width: 100%;
+    display: flex;
+}
+div.leftmenu{
+    font-size: 18px;
+    width: 48%;
+}
+div.rightmenu{
+    display: flex;
+    /* To jest kontrowersyjne :) */
+    flex-direction: row-reverse;
+    width: 48%;
+}
+button.signin, button.signup{
+    padding: 2%;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+button.signup:hover, button.signin:hover{
+    color: white;
+    background-color: brown;
+}
+main.content{
+    display: flex;
+    justify-content: space-between;
+}
+div.post{
+    width: 25%;
+}

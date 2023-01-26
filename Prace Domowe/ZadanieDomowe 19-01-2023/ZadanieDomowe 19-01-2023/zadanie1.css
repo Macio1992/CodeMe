@@ -1,0 +1,58 @@
+/* Powiem szczerze pierwszy raz zobaczyłem taki układ
+że trzy kolumny po 3 divy. Np. zakładając, że te posty
+wyświetlone by były po dacie. Czyli najnowsze na samej górze
+to musiałyby być te divy od lewa do prawa a nie w doł.
+Ja bym chyba zrobił flex-direction: row; flex-wrap: wrap :) */
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  width: 400px;
+}
+.con {
+  margin: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  display: flex;
+  padding-right: 30px;
+  font-size: larger;
+}
+nav {
+  justify-content: space-between;
+}
+img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding-right: 30px;
+}
+/* Jesli już używamy diva, to powinniśmy dać klasę */
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav p {
+  border: 2px solid brown;
+  color: brown;
+  display: flex;
+  justify-content: end;
+  border-radius: 5px;
+  width: auto;
+  padding: 15px;
+  margin: 5px;
+  font-size: large;
+}
+nav p:hover {
+  background-color: brown;
+  color: white;
+}

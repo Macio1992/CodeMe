@@ -1,0 +1,38 @@
+:root {
+  --size-10: 10px;
+  --size-20: calc(var(--size-10)*2);
+  --size-30: calc(var(--size-10)*3);
+  --size-40: calc(var(--size-10)*4);
+  --size-80: calc(var(--size-40)*2);
+  --size-120: calc(var(--size-40)*3);
+  --border-radius-size: 5px;
+  --main-header-size-mobile: 2em;
+  --main-header-size-desktop: 3em;
+  --input-font-size: 1em;
+  --h2-font-size: 1.25em;
+  --posts-area-size-desktop: 70%;
+  --input-area-size-desktop: 30%;
+  --post-size: 45%;
+
+  --grey-color: grey;
+  --white-color: #fff;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}

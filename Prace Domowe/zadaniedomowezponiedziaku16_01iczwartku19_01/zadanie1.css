@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+img.logo {
+    /* Lepiej dać jakieś piksele, np. 25px */
+  width: 5%;
+}
+
+.nav {
+  position: fixed;
+  font-size: 2em;
+  /* Niepotrzebne */
+  display: inline-block;
+  /* Brakuje:  */
+  background-color: white;
+}
+
+/* Gdybyśmy dali tu margin: 0 i padding: 0, to by troche podjechało do góry */
+ul {
+  display: inline-block;
+}
+
+/* tu by się przydało trochę paddingu z lewej i prawej strony */
+li {
+  font-weight: bold;
+  list-style: none;
+  display: inline;
+}
+
+a.navi {
+  text-decoration: none;
+  color: black;
+}
+
+article {
+  padding-top: 150px;
+}
+
+div.offer {
+  float: left;
+  width: 23%;
+  margin: 2%;
+}
+
+img.offerimg {
+  width: 100%;
+}
+
+button.order {
+  display: block;
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+  padding: 10px;
+  margin: auto;
+}
+
+a.seemore {
+  display: block;
+  text-align: center;
+}
+
+/* To powinno byc na dole, lepiej bottom niż top :) */
+div.opinion {
+  background-color: yellow;
+  display: inline-block;
+  padding: 10px;
+  top: 35%;
+  position: fixed;
+}
+
+footer {
+    /* Lepiej na rodzicu postów, dać overflow: hidden */
+  clear: both;
+  background-color: blueviolet;
+  color: whitesmoke;
+  width: 100%;
+}

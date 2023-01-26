@@ -1,0 +1,46 @@
+/* Super robota, sporo komentarzy bo mi zależy żeby było idealnie u Ciebie.
+  Najlepsze użycie flexa, krótko ale na temat. Najlepiej zrobiona praca domowa :)
+*/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menulist {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.menulist li {
+  padding: 10px;
+}
+
+.icon {
+  width: 1.2rem;
+}
+
+.buttons {
+  color: brown;
+  border: 1px solid brown;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.buttons:hover {
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  width: 30%;
+}

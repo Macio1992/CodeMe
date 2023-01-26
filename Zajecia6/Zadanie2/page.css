@@ -1,0 +1,89 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding:  var(--size-20);
+}
+
+.main .form {
+  order: -1;
+  text-align: center;
+  padding: var(--size-20) 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .form input[type=text] {
+  width: 100%;
+  padding: var(--size-10);
+  border: 1px solid var(--grey-color);
+  border-radius: var(--border-radius-size);
+  font-size: var(--input-font-size);
+}
+
+.main .form input[type=submit] {
+  align-self: center;
+  background-color: var(--white-color);
+  border: 1px solid var(--grey-color);
+  margin-top: var(--size-20);
+  padding: var(--size-10) var(--size-30);
+  border-radius: var(--border-radius-size);
+}
+
+.main .form h3 {
+  margin-bottom: var(--size-10);
+}
+
+.main-header {
+  text-align: right;
+  font-size: var(--main-header-size-mobile);
+  padding: 0 var(--size-40);
+  margin: var(--size-40) 0;
+}
+
+.main .posts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main .posts .post {
+  margin-bottom: var(--size-20);
+  flex-basis: var(--post-size);
+}
+
+.main .posts .post img {
+  max-width: 100%;
+}
+
+.main .posts .post h2 {
+  font-weight: normal;
+  font-size: var(--h2-font-size);
+  margin-top: var(--size-20);
+}
+
+@media screen and (min-width: 48em) {
+  .main-header {
+    font-size: var(--main-header-size-desktop);
+    margin: var(--size-120) 0 var(--size-80) 0;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main .posts {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: var(--posts-area-size-desktop);
+  }
+
+  .main .posts .post {
+    margin: 0 var(--size-10) var(--size-20) var(--size-10);
+  }
+
+  .main .form {
+    order: 0;
+    flex-basis: var(--input-area-size-desktop);
+    padding: 0;
+  }
+}
