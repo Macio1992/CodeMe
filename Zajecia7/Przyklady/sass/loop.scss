@@ -1,0 +1,28 @@
+$sizes: 10, 20, 30;
+$base-color: #036;
+$white-color: #fff;
+
+@each $size in $sizes {
+  .padding--#{$size} {
+    padding: #{$size}px;
+  }
+}
+
+$colors: (
+  "red": '#FF3500',
+  "green" : '#10EA10',
+  "blue": '#2F2FDF'
+);
+
+@each $color, $color_value in $colors {
+  .bcg-#{$color} {
+    background-color: #{$color_value};
+  }
+}
+
+@for $i from 1 through 3 {
+  ul li:nth-child(n + #{$i}) {
+    background-color: lighten($base-color, $i * 15%);
+    color: $white-color;
+  }
+}

@@ -1,0 +1,42 @@
+button {
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.with-params {
+  background-color: gray;
+  border: 2px solid black;
+  padding: 60px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+button.with-conditions-small {
+  background-color: orange;
+  border: 1px solid yellow;
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+button.with-conditions-medium {
+  background-color: orange;
+  border: 1px solid yellow;
+  color: white;
+  width: 120px;
+  height: 70px;
+}
+
+button.with-conditions-large {
+  background-color: orange;
+  border: 1px solid yellow;
+  color: white;
+  width: 150px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=mixin.css.map */

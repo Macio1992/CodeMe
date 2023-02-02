@@ -1,0 +1,36 @@
+:root {
+  --size-10: 10px;
+  --size-20: calc(var(--size-10)*2);
+  --size-30: calc(var(--size-10)*3);
+
+  --page-size-desktop: 80%;
+  --articles-size-desktop: 70%;
+  --aside-size-desktop: 30%;
+
+  --black-color: #000;
+  --gray-color: gray;
+
+  --font-size-small: 1em;
+  --font-size-medium: 1.5em;
+  --font-size-big: 2em;
+
+  --button-border-radius: 5px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}

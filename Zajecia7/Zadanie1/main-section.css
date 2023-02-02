@@ -1,0 +1,88 @@
+main, main section {
+  display: flex;
+  flex-direction: column;
+}
+
+main section h1 {
+  margin-bottom: var(--size-30);
+  font-size: var(--font-size-big);
+  width: 100%;
+}
+
+main section article {
+  margin-bottom: var(--size-20);
+  display: flex;
+  flex-direction: column;
+}
+
+main section article img {
+  display: block;
+  margin-bottom: var(--size-20);
+}
+
+main section article h2 {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  margin-bottom: var(--size-20);
+}
+
+main section article h3 {
+  font-size: var(--font-size-small);
+  line-height: var(--size-20);
+}
+
+main aside {
+  padding: var(--size-20);
+  order: -1;
+}
+
+main aside h2 {
+  margin-bottom: var(--size-20);
+  font-size: var(--font-size-medium);
+  text-align: right;
+}
+
+main aside form input[type="email"] {
+  width: 100%;
+  padding: var(--size-10);
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--gray-color);
+}
+
+main aside form input[type="submit"] {
+  background: none;
+  border: 1px solid var(--gray-color);
+  padding: var(--size-10) var(--size-20);
+  border-radius: var(--button-border-radius);
+  display: block;
+  margin: var(--size-20) auto;
+}
+
+@media screen and (min-width: 48em) {
+  main {
+    width: var(--page-size-desktop);
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main section {
+    padding: var(--size-30) 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main section h1 {
+    width: 100%;
+  }
+
+  main section .articles {
+    width: var(--articles-size-desktop);
+  }
+
+  main aside {
+    order: 0;
+    padding: var(--size-30);
+    width: var(--aside-size-desktop);
+  }
+}

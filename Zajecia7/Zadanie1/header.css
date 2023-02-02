@@ -1,0 +1,47 @@
+header,
+main {
+  padding: 0 var(--size-10);
+}
+
+header {
+  margin: var(--size-30) auto;
+  padding-top: var(--size-20);
+  border-top: 2px solid;
+}
+
+header ul {
+  display: none;
+}
+
+header ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 var(--size-20);
+  color: var(--black-color);
+  font-weight: 900;
+}
+
+@media screen and (min-width: 48em) {
+  header nav svg {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 var(--size-20);
+    color: var(--black-color);
+    font-weight: 900;
+  }
+
+  header {
+    width: var(--page-size-desktop);
+    margin: auto;
+  }
+}

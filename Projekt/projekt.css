@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+ul.menu{
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    list-style: none;
+}
+li.menu{
+    padding: 0.5em;
+}
+img.logo{
+    width: 7em;
+}
+img.icons{
+    width: 2em;
+}
+main{
+    margin: auto;
+    width: 29em;
+    height: 100%;
+}
+div.post{
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: thistle;
+    background-color: white;
+    width: 100%;
+    height: 90%;
+}
+nav{
+    background-color: white;
+    width: 21em;
+    position: fixed;
+    border-right: 1px solid;
+    border-color: thistle;
+    height: 100%;
+}
+table{
+    margin: auto;
+}
+div.posttop{
+    padding: 0.5em;
+    display: flex;
+}
+img.avatars{
+    width: 3em;
+}
+p.nickname{
+    font-weight: bold;
+}
+img.postimg{
+    width: 100%;
+}
+div.description{
+    padding: 0.5em;
+}
+span.follow{
+    color: cornflowerblue;
+}
+span.save{
+    text-align: right;
+}
+p.likes{
+    font-weight: bold;
+}
+span.username{
+    font-weight: bold;
+}
+img.emote{
+    width: 2em;
+}
+input.comment{
+    width: 27em;
+    border-style: none;
+}
+hr.commentline{
+    color: thistle;
+}
+button.post{
+    width: 2em;
+    border: none;
+    color: cornflowerblue;
+    background-color: white;
+}
+div.story{
+    overflow-x: scroll;
+    text-align: center;
+    margin-bottom: 1em;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: thistle;
+    background-color: white;
+    width: 100%;
+    height: 6em;
+}
+ul.stories{
+    padding-top: 1.5em;
+    list-style: none;
+    display: flex;
+}
+img.stories{
+    width: 4em;
+}

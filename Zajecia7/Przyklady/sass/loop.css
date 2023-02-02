@@ -1,0 +1,40 @@
+.padding--10 {
+  padding: 10px;
+}
+
+.padding--20 {
+  padding: 20px;
+}
+
+.padding--30 {
+  padding: 30px;
+}
+
+.bcg-red {
+  background-color: #FF3500;
+}
+
+.bcg-green {
+  background-color: #10EA10;
+}
+
+.bcg-blue {
+  background-color: #2F2FDF;
+}
+
+ul li:nth-child(n+1) {
+  background-color: #0059b3;
+  color: #fff;
+}
+
+ul li:nth-child(n+2) {
+  background-color: #0080ff;
+  color: #fff;
+}
+
+ul li:nth-child(n+3) {
+  background-color: #4da6ff;
+  color: #fff;
+}
+
+/*# sourceMappingURL=loop.css.map */

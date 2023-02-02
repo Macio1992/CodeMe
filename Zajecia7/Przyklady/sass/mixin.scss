@@ -1,0 +1,64 @@
+$white-color: #fff;
+$grey-color: gray;
+
+@mixin button {
+  background-color: $white-color;
+  border: 1px solid $grey-color;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@mixin button_with_parameters(
+  $bcg-color,
+  $border-width,
+  $border-color,
+  $padding-x,
+  $padding-y,
+  $border-radius-size,
+  $color
+) {
+  background-color: $bcg-color;
+  border: $border-width solid $border-color;
+  padding: $padding-y $padding-x;
+  cursor: pointer;
+  border-radius: $border-radius-size;
+  color: $color;
+}
+
+@mixin button_with_conditions ($bcg-color, $border-color, $color, $size) {
+  background-color: $bcg-color;
+  border: 1px solid $border-color;
+  color: $color;
+
+  @if $size == 'small' {
+    width: 100px;
+    height: 50px;
+  } @else if $size == 'medium' {
+    width: 120px;
+    height: 70px;
+  } @else if $size == 'large' {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+button {
+  @include button;
+}
+
+button.with-params {
+  @include button_with_parameters(gray, 2px, black, 30px, 60px, 20px, white);
+}
+
+button.with-conditions-small {
+  @include button_with_conditions(orange, yellow, white, 'small')
+}
+
+button.with-conditions-medium {
+  @include button_with_conditions(orange, yellow, white, 'medium')
+}
+
+button.with-conditions-large {
+  @include button_with_conditions(orange, yellow, white, 'large')
+}

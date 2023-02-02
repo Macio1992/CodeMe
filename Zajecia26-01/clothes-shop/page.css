@@ -1,0 +1,56 @@
+header {
+  margin-bottom: 30px;
+}
+
+.main-navigation .menu,
+.sub-navigation .submenu {
+  display: none;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons > * {
+  margin: 0 5px;
+}
+
+main {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main aside {
+  order: -1;
+  margin-bottom: 30px;
+}
+
+main aside input {
+  width: 100%;
+  padding: 10px;
+}
+
+.clothes-header {
+  font-size: 2em;
+  text-align: right;
+}
+
+.clothes {
+  margin-top: 30px;
+}
+
+.clothes article {
+  margin-bottom: 20px;
+}
+
+.clothes article h2 {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 1em;
+}

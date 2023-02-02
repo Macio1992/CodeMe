@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+html, body, main, .sidebar {
+  height: 100%;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.small-image {
+  width: 32px;
+}

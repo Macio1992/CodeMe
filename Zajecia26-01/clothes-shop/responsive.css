@@ -1,0 +1,66 @@
+@media screen and (min-width: 48em) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .main-navigation .menu,
+  .sub-navigation .submenu {
+    display: flex;
+  }
+
+  .main-navigation {
+    align-items: center;
+  }
+
+  .main-navigation .menu li {
+    margin: 0 10px;
+  }
+
+  .sub-navigation .submenu {
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .sub-navigation .submenu li {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  main .main {
+    width: 60%;
+  }
+
+  main aside {
+    width: 40%;
+    order: 0;
+  }
+
+  main aside input {
+    width: 80%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+  }
+
+  .clothes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .clothes article {
+    width: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .clothes article {
+    width: calc(100%/3);
+    padding: 0 20px;
+  }
+}
